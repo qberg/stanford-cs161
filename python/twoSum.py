@@ -21,15 +21,11 @@ def two_sum(data, lb=-10000, rb=10000):
 if __name__ == "__main__":
     start = time.time()
 
-    print("---"*25)
-    print("Reading input from the text file...")
     path_to_file = "tests/twosum.txt"
     data = read_input(path_to_file)
-    print(f"Input read from source in {time.time() - start} seconds...")
 
     count = two_sum(data)
     print(f"Number of target values in the interval [-10000,10000] is {count}")
     print(f"Time taken for the algorithm to complete: {time.time() -start} seconds")
-    print("---"*25)
  
 
